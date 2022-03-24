@@ -1,0 +1,135 @@
+{
+    "year": "2018",
+    "ntuple": "/eos/user/b/bjoshi/RunIITau23Mu/AnalysisTrees/Preapproval/T3MSelectionTreeInput_preapproval_iteration_2_combined_2018UL_calo_check_muonsf.root",
+    "path_to_output": "/eos/user/b/bjoshi/RunIITau23Mu/Preapproval_iteration2/xgboost_output/",
+    "trees": {
+            "BKG": {
+                "path": "TreeB",
+                "weight": 1.0,
+                "cuts": ""
+            },
+            "DS": {
+                "path": "TreeS_Ds",
+                "weight": 1.0,
+                "cuts": ""
+            },
+            "BU": {
+                "path": "TreeS_Bd",
+                "weight": 0.194,
+                "cuts": ""
+            },
+            "BD": {
+                "path": "TreeS_Bd",
+                "weight": 0.194,
+                "cuts": ""
+            }
+        },
+    "mva": {
+        "A": {
+            "cutb": "category==1 & (var_tauMassRefitted > 1.825 | var_tauMassRefitted < 1.729) & threeGlobal==0",
+            "cuts": "category==1 & threeGlobal==0",
+            "input_variables": [
+                "var_vertexKFChi2",
+                "var_svpvTauAngle",
+                "var_flightLenSig",
+                "var_pmin",
+                "var_max_cLP",
+                "var_max_tKink",
+                "var_MinD0Significance",
+                "var_mindca_iso",
+                "var_trk_relPt",
+                "min(Muon1_segmentCompatibility, Muon2_segmentCompatibility)",
+                "var_globalMuon1Id",
+                "var_globalMuon2Id",
+                "var_trackerMuonId_without_calo",
+                "var_NtracksClose",
+                "muon3_seg_comp_dnn",
+                "Muon1_BSdxySig",
+                "Muon2_BSdxySig",
+                "Muon3_BSdxySig"
+            ],
+            "spec_variables": [
+                "run",
+                "lumi",
+                "eventNumber",
+                "var_tauMassRefitted",
+                "category",
+                "threeGlobal",
+                "bdt_weight",
+                "eventWeight"
+            ],
+            "settings": {}
+        },
+        "B": {
+            "cutb": "category==2 & (var_tauMassRefitted > 1.853 | var_tauMassRefitted < 1.701) & threeGlobal==0",
+            "cuts": "category==2 & threeGlobal==0",
+            "input_variables": [
+                "var_vertexKFChi2",
+                "var_svpvTauAngle",
+                "var_flightLenSig",
+                "var_pmin",
+                "var_max_cLP",
+                "var_max_tKink",
+                "var_MinD0Significance",
+                "var_mindca_iso",
+                "var_trk_relPt",
+                "min(Muon1_segmentCompatibility, Muon2_segmentCompatibility)",
+                "var_globalMuon1Id",
+                "var_globalMuon2Id",
+                "var_trackerMuonId_without_calo",
+                "var_NtracksClose",
+                "muon3_seg_comp_dnn",
+                "Muon1_BSdxySig",
+                "Muon2_BSdxySig",
+                "Muon3_BSdxySig"
+            ],
+            "spec_variables": [
+                "run",
+                "lumi",
+                "eventNumber",
+                "var_tauMassRefitted",
+                "category",
+                "threeGlobal",
+                "bdt_weight",
+                "eventWeight"
+            ],
+            "settings": {}
+        },
+        "C": {
+            "cutb": "category==3 & (var_tauMassRefitted>1.877 | var_tauMassRefitted<1.677) & threeGlobal==0",
+            "cuts": "category==3 & threeGlobal==0",
+            "input_variables": [
+                "var_vertexKFChi2",
+                "var_svpvTauAngle",
+                "var_flightLenSig",
+                "var_pmin",
+                "var_max_cLP",
+                "var_max_tKink",
+                "var_MinD0Significance",
+                "var_mindca_iso",
+                "var_trk_relPt",
+                "min(Muon1_segmentCompatibility, Muon2_segmentCompatibility)",
+                "var_globalMuon1Id",
+                "var_globalMuon2Id",
+                "var_trackerMuonId_without_calo",
+                "var_NtracksClose",
+                "muon3_seg_comp_dnn",
+                "Muon1_BSdxySig",
+                "Muon2_BSdxySig",
+                "Muon3_BSdxySig"
+            ],
+            "spec_variables": [
+                "run",
+                "lumi",
+                "eventNumber",
+                "var_tauMassRefitted",
+                "category",
+                "threeGlobal",
+                "bdt_weight",
+                "eventWeight"
+            ],
+            "settings": {}
+        }
+    },
+    "refBranch": "eventNumber"
+}
