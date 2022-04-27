@@ -26,8 +26,10 @@
         },
     "mva": {
         "A": {
-            "cutb": "category==1 & (var_tauMassRefitted > 1.825 | var_tauMassRefitted < 1.729) & threeGlobal==0",
-            "cuts": "category==1 & threeGlobal==0",
+            "cutb_train": "category==1 & (var_tauMassRefitted > 1.825 | var_tauMassRefitted < 1.729) & threeGlobal==0",
+            "cuts_train": "category==1 & threeGlobal==0",
+				"cutb_eval": "category==1 && threeGlobal==0",
+				"cuts_eval": "categhory==1 && threeGlobal==0",
             "input_variables": [
                 "var_vertexKFChi2",
                 "var_svpvTauAngle",
@@ -61,8 +63,10 @@
             "settings": {}
         },
         "B": {
-            "cutb": "category==2 & (var_tauMassRefitted > 1.853 | var_tauMassRefitted < 1.701) & threeGlobal==0",
-            "cuts": "category==2 & threeGlobal==0",
+            "cutb_train": "category==2 & (var_tauMassRefitted > 1.853 | var_tauMassRefitted < 1.701) & threeGlobal==0",
+            "cuts_train": "category==2 & threeGlobal==0",
+				"cutb_eval": "category==2 && threeGlobal==0",
+				"cuts_eval": "categhory==2 && threeGlobal==0",
             "input_variables": [
                 "var_vertexKFChi2",
                 "var_svpvTauAngle",
@@ -96,8 +100,10 @@
             "settings": {}
         },
         "C": {
-            "cutb": "category==3 & (var_tauMassRefitted>1.877 | var_tauMassRefitted<1.677) & threeGlobal==0",
-            "cuts": "category==3 & threeGlobal==0",
+            "cutb_train": "category==3 & (var_tauMassRefitted>1.877 | var_tauMassRefitted<1.677) & threeGlobal==0",
+            "cuts_train": "category==3 & threeGlobal==0",
+				"cutb_eval": "category==3 && threeGlobal==0",
+				"cuts_eval": "categhory==3 && threeGlobal==0",
             "input_variables": [
                 "var_vertexKFChi2",
                 "var_svpvTauAngle",

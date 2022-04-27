@@ -1,0 +1,4 @@
+ntuples/*
+.DS_store
+src/*pyc
+*.pyc
